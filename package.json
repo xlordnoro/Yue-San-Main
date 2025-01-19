@@ -1,6 +1,6 @@
 {
   "name": "yue_san_main",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Everybody's favorite sexy, loli, vampire queen has taken on a new role to keep track of literature.",
   "main": "src/bot.js",
   "scripts": {
@@ -18,7 +18,7 @@
     "discord-embedbuilder": "^4.0.0",
     "discord.js": "^14.7.1",
     "dotenv": "^16.0.3",
-    "mongoose": "^6.9.1",
+    "mongoose": "^8.9.5",
     "node-cron": "^3.0.3",
     "nodemailer": "^6.9.13",
     "ping": "^0.4.4",
