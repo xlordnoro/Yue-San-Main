@@ -1,6 +1,6 @@
 {
   "name": "yue_san_main",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Everybody's favorite sexy, loli, vampire queen has taken on a new role to keep track of literature.",
   "main": "src/bot.js",
   "scripts": {
@@ -10,20 +10,20 @@
   "author": "Noro",
   "license": "ISC",
   "dependencies": {
-    "@discordjs/rest": "^1.5.0",
-    "axios": "^1.7.5",
-    "chalk": "^4.1.2",
-    "date-fns": "^2.30.0",
-    "discord-api-types": "^0.37.31",
+    "@discordjs/rest": "^2.2.0",
+    "axios": "^1.7.9",
+    "chalk": "^5.4.1",
+    "date-fns": "^4.1.0",
+    "discord-api-types": "^0.37.118",
     "discord-embedbuilder": "^4.0.0",
-    "discord.js": "^14.7.1",
-    "dotenv": "^16.0.3",
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.4.7",
     "mongoose": "^8.9.5",
     "node-cron": "^3.0.3",
-    "nodemailer": "^6.9.13",
+    "nodemailer": "^6.10.0",
     "ping": "^0.4.4",
-    "puppeteer": "^23.11.1",
+    "puppeteer": "^24.1.1",
     "rss-parser": "^3.13.0",
-    "uuid": "^9.0.0"
+    "uuid": "^11.0.5"
   }
 }
