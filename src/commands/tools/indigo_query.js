@@ -47,9 +47,24 @@ module.exports = {
       // Navigate to the book's page
       await page.goto(bookPageUrl, { waitUntil: 'domcontentloaded' });
 
-      // Wait for the Paperback option and click it
-      await page.waitForSelector('span.format-value.block-value.swatch-value.selected.selectable', { visible: true });
-      await page.click('span.format-value.block-value.swatch-value.selectable[data-attr-value="TP"]');
+      // Original method below: I changed it to a selector array as some of the novels on indigo only have paperback 
+      // and the selector element is different than 2 formats in a single page.
+      
+      //await page.waitForSelector('span.format-value.block-value.swatch-value.selected.selectable', { visible: true });
+      //await page.click('span.format-value.block-value.swatch-value.selectable[data-attr-value="TP"]');
+
+      const selectors = [
+            'span.format-value.block-value.swatch-value.selectable[data-attr-value="TP"]',
+            'span.format-value.block-value.swatch-value.selected'
+        ];
+
+      for (const selector of selectors) {
+        const element = await page.$(selector);
+        if (element) {
+            await page.click(selector);
+            break; // Stop after first successful click
+        }
+      }
 
       await new Promise(r => setTimeout(r, 2000)); // 2-second delay
 

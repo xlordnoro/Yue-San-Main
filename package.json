@@ -1,6 +1,6 @@
 {
   "name": "yue_san_main",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Everybody's favorite sexy, loli, vampire queen has taken on a new role to keep track of literature.",
   "main": "src/bot.js",
   "scripts": {
